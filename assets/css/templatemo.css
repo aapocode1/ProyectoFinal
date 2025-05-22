@@ -69,7 +69,7 @@ body, ul, li, p, a, label, input, div {
 }
 /* Nav */
 #templatemo_nav_top { min-height: 40px;}
-#templatemo_nav_top * { font-size: .9em !important;}
+#templatemo_nav_top * { font-size: 1em !important;} /*se cambio este valor de 0.9em*/
 #templatemo_main_nav a { color: #212934;}
 #templatemo_main_nav a:hover { color: #69bb7e;}
 #templatemo_main_nav .navbar .nav-icon { margin-right: 20px;}
@@ -119,6 +119,21 @@ body, ul, li, p, a, label, input, div {
   margin-top: -50px;
   background-color: #59ab6e;
 }
+/*esta clase se agrego*/
+.logo{
+  display: flex;
+  background-color: rgb(255, 150, 170);
+}
+
+.custom-bg {
+    background-color: rgb(255, 150, 170); /* Color rosa personalizado */
+}
+
+.custombar-bg{
+  background-color: rgb(196, 78, 100);
+}
+
+
 #template-mo-zay-hero-carousel .carousel-control-next i,
 #template-mo-zay-hero-carousel .carousel-control-prev i {
   color: #59ab6e !important;

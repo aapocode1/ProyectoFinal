@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/toalla-de-bano.png" type="image/x-icon">
+    <title>HouseAtelier</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="logo" width="150" height="150">
+            <h1>HouseAtelier | Taller a la medida</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg custombar-bg navbar-light" id="templatemo_nav_top">
+            <div class="container text-light">
+                <div class="w-100 d-flex justify-content-between">
+                    <div>
+                        <i class="fa fa-home mx-2"></i>
+                        <a class="navbar-sm-brand text-light text text-decoration-none" href="index.html">Inicio</a>
+                        <i class="fa fa-shopping-bag mx-2"></i>
+                        <a class="navbar-sm-brand text-light text text-decoration-none" href="shop.html">Productos</a>
+                        <i class="fa fa-user mx-2"></i>
+                        <a class="navbar-sm-brand text-light text text-decoration-none" href="about.html">Acerca de</a>
+                        <i class="fa fa-phone mx-2"></i>
+                        <a class="navbar-sm-brand text-light text text-decoration-none" href="contact.html">Contacto</a>
+                        <i class="fa fa-envelope mx-2"></i>
+                        <a class="navbar-sm-brand text-light text text-decoration-none" href="mailto:info@houseatelier.com">info@houseatelier.com</a>
+                    </div>
+                    <div>
+                        <a class="text-light" href="https://www.instagram.com/house.atelier?igsh=MXFlMzdod2FoZ21uZg==" target="_blank" rel="sponsored"><i class="fab fa-instagram fa-sm fa-fw me-2"></i>Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="productos">
+            <div class="producto">
+                <img src="toalla1.jpg" alt="Toalla artesanal 1">
+                <h2>Toalla Elegante</h2>
+                <p>$25.00</p>
+                <button onclick="agregarAlCarrito('Toalla Elegante', 25)">Agregar</button>
+            </div>
+            <div class="producto">
+                <img src="toalla2.jpg" alt="Toalla artesanal 2">
+                <h2>Toalla Premium</h2>
+                <p>$30.00</p>
+                <button onclick="agregarAlCarrito('Toalla Premium', 30)">Agregar</button>
+            </div>
+        </section>
+    </main>
+    
+    <aside>
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito"></ul>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+
+        <h2>Formulario de Pago</h2>
+        <form id="formPago">
+            <label>Nombre:</label>
+            <input type="text" required><br>
+            <label>Tarjeta de crédito:</label>
+            <input type="text" required><br>
+            <button type="submit">Pagar</button>
+        </form>
+    </aside>
+
+    <footer class="custom-bg" id="templatemo_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-warning border-bottom pb-3 border-light log">House Atelier</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fa fa-map-marker fa-fw"></i>
+                            Local principal - Barranquilla - Colombia
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="navbar-sm-brand text-light text text-decoration-none" href="contact.html">+57 1234567890</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope mx-2"></i>
+                            <a class="navbar-sm-brand text-light text text-decoration-none" href="mailto:info@houseatelier.com">info@houseatelier.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-dark border-bottom pb-3 border-light">Productos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a  class="text-decoration-none" href="#">Toallas</a></li>
+                        <li><a  class="text-decoration-none" href="#">Pijamas</a></li>
+                        <li><a  class="text-decoration-none" href="#">Fajas</a></li>
+                        <li><a  class="text-decoration-none" href="#">Manteles</a></li>
+                        <li><a  class="text-decoration-none" href="#">Conjuntos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-dark border-bottom pb-3 border-light">Mas informacion</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a  class="text-decoration-none" href="#">Inicio</a></li>
+                        <li><a  class="text-decoration-none" href="shop.html">Productos</a></li>
+                        <li><a  class="text-decoration-none" href="about.html">Acerca de</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 bg-transparent py-2 border">
+            <div class="container">
+                <div class="row pt-2">
+                    <p class="text-left text-dark">&copy; 2025 - House Atelier | Diseñado por: Alonso Paez & Rolando Suárez</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
