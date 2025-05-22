@@ -76,6 +76,27 @@ body, ul, li, p, a, label, input, div {
 
 /* Hero Carousel */
 #template-mo-zay-hero-carousel { background: #efefef !important;}
+
+/* agregado esta clase para el carrusel*/
+.carousel-item img {
+    width: 100vw; /* Ajusta el ancho según sea necesario */
+    height: 600px; /* Ajusta la altura según sea necesario */
+    object-fit:contain; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 30px;  /* Ajusta el ancho */
+    height: auto; /* Ajusta la altura */
+    background-size: 90%;  /*Reduce el tamaño del icono dentro del botón */
+    border: none;
+    outline: none; /* También elimina el contorno de enfoque */
+
+}
+
+
+
 /* Accordion */
 .templatemo-accordion a { color: #000;}
 .templatemo-accordion a:hover { color: #333d4a;}
