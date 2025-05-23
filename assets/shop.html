@@ -37,7 +37,7 @@
         <!-- inicio menu -->
          <nav class="navbar navbar-expand-lg custom-bg shadow">
             <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand text-warning h1 align-self-center" href="index.html">HouseAtelier</a>
+                <h1 class="navbar-brand text-warning h1 align-self-center user-select-none" href="index.html">HouseAtelier</h1>
                 <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-between" id="nav-item">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
@@ -49,9 +49,13 @@
                             <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <i class="fa fa-shopping-cart mx-5"></i>
-                            <a class="nav-link disabled" href="shop.html">Carrito de compras</a>
+                            <a href="assets/shop.html" class="carrito-icono">
+                            <span id="carrito-contador" class="carrito-contador">0</span>
+                            </a>
+                            <i class="fa fa-shopping-cart mx-2"></i>
+                            <a class="nav-link disabled" href="productos.html">Carrito</a>
                         </li>
+
                         <li class="nav-item">
                             <i class="fa fa-user mx-5"></i>
                             <a class="nav-link" href="about.html">Acerca de</a>
@@ -62,6 +66,42 @@
          </nav>
 
         <div class="container my-5">
+            <div class="row justify-content-center">
+                <!-- Carrito de Compras -->
+                <div class="col-md-5 mb-4">
+                    <aside class="carrito-container">
+                        <h2>Carrito de Compras</h2>
+                        <ul id="carrito"></ul>
+                        <p id="total"></p>
+                        <button class="btn-aside" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                    </aside>
+                </div>
+
+                <!-- Formulario de Pago -->
+                <div class="col-md-5 mb-4">
+                    <aside class="formulario-container">
+                        <h2>Formulario de Pago</h2>
+                        <form id="formPago">
+                            <label>Nombre:</label>
+                            <input type="text" required class="form-control mb-2">
+                            <label>Apellido:</label>
+                            <input type="text" required class="form-control mb-2">
+                            <label>Cédula:</label>
+                            <input type="text" required class="form-control mb-2">
+                            <label>Dirección:</label>
+                            <input type="text" required class="form-control mb-2">
+                            <label>Teléfono:</label>
+                            <input type="tel" required class="form-control mb-2">
+                            <label>Tarjeta de crédito:</label>
+                            <input type="text" required class="form-control mb-3">
+                            <button class="btn-form" type="submit">Pagar</button>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-md-5 mb-4">
                     <aside>
@@ -92,7 +132,7 @@
                     </aside>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <footer class="custombar-bg" id="templatemo_footer">
         <div class="container">

@@ -37,7 +37,7 @@
         <!-- inicio menu -->
          <nav class="navbar navbar-expand-lg custom-bg shadow">
             <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand text-warning h1 align-self-center" href="index.html">HouseAtelier</a>
+                <h1 class="navbar-brand text-warning h1 align-self-center user-select-none" href="index.html">HouseAtelier</h1>
                 <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-between" id="nav-item">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
@@ -49,8 +49,11 @@
                             <a class="nav-link disabled" href="assets/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <i class="fa fa-shopping-cart mx-5"></i>
-                            <a class="nav-link" href="shop.html">Carrito de compras</a>
+                            <a href="assets/shop.html" class="carrito-icono">
+                            <span id="carrito-contador" class="carrito-contador">0</span>
+                            </a>
+                            <i class="fa fa-shopping-cart mx-2"></i>
+                            <a class="nav-link" href="shop.html">Carrito</a>
                         </li>
                         <li class="nav-item">
                             <i class="fa fa-user mx-5"></i>
@@ -61,39 +64,6 @@
             </div>
          </nav>
 
-         <!-- <main>
-            <section id="productos">
-                <div class="producto">
-                    <img src="img/toallas/Toalla cuerpo(1).jpg" alt="Toalla cuerpo">
-                    <h2>Toalla Cuerpo</h2>
-                    <p>$90.000</p>
-                    <button class="btn-main" onclick="agregarAlCarrito('Toalla Cuerpo', 90000,this)">Agregar</button>
-                    <p class="mensaje" style="color: green; display: none;"></p>
-                </div>
-                <div class="producto">
-                    <img src="img/toallas/Balaca para el cabello.jpeg" alt="Balaca para el cabello">
-                    <h2>Balaca para el cabello</h2>
-                    <p>$20000</p>
-                    <button class="btn-main" onclick="agregarAlCarrito('Balaca para el cabello', 20000,this)">Agregar</button>
-                    <p class="mensaje" style="color: green; display: none;"></p>
-                </div>
-                <div class="producto">
-                    <img src="img/toallas/Gorro cabeza(1).jpeg" alt="Gorro cabeza">
-                    <h2>Gorro para el cabello</h2>
-                    <p>$20000</p>
-                    <button class="btn-main" onclick="agregarAlCarrito('Gorro para el cabello', 30000,this)">Agregar</button>
-                    <p class="mensaje" style="color: green; display: none;"></p>
-                </div>
-                <div class="producto">
-                    <img src="img/toallas/Set de toallas antialérgica y doble faz (1).jpg" alt="Set de toallas antialérgica y doble faz">
-                    <h2>Set de toallas antialérgica y doble faz</h2>
-                    <p>$140000</p>
-                    <button class="btn-main" onclick="agregarAlCarrito('Set de toallas antialérgica y doble faz', 140000,this)">Agregar</button>
-                    <p class="mensaje" style="color: green; display: none;"></p>
-                </div>
-            </section>
-        </main> -->
-
         <main>
     <section id="productos">
         <h2>Toallas</h2>
@@ -102,28 +72,28 @@
                     <img src="img/toallas/Toalla cuerpo(1).jpg" alt="Toalla cuerpo">
                     <h2>Toalla Cuerpo</h2>
                     <p>$90.000</p>
-                    <button class="btn-main" onclick="agregarAlCarrito('Toalla Cuerpo', 90000,this)">Agregar</button>
+                    <button class="btn-main" onclick="agregarAlCarrito('Toalla Cuerpo', 90000,'img/toallas/Toalla cuerpo(1).jpg',this)">Agregar</button>
                     <p class="mensaje" style="color: green; display: none;"></p>
                 </div>
                 <div class="producto">
                     <img src="img/toallas/Balaca para el cabello.jpeg" alt="Balaca para el cabello">
                     <h2>Balaca para el cabello</h2>
                     <p>$20.000</p>
-                    <button class="btn-main" onclick="agregarAlCarrito('Balaca para el cabello', 20000,this)">Agregar</button>
+                    <button class="btn-main" onclick="agregarAlCarrito('Balaca para el cabello', 20000,'img/toallas/Balaca para el cabello.jpeg',this)">Agregar</button>
                     <p class="mensaje" style="color: green; display: none;"></p>
                 </div>
                 <div class="producto">
                     <img src="img/toallas/Gorro cabeza(1).jpeg" alt="Gorro cabeza">
                     <h2>Gorro para el cabello</h2>
                     <p>$20.000</p>
-                    <button class="btn-main" onclick="agregarAlCarrito('Gorro para el cabello', 30000,this)">Agregar</button>
+                    <button class="btn-main" onclick="agregarAlCarrito('Gorro para el cabello', 30000,'img/toallas/Gorro cabeza(1).jpeg',this)">Agregar</button>
                     <p class="mensaje" style="color: green; display: none;"></p>
                 </div>
                 <div class="producto">
                     <img src="img/toallas/Set de toallas antialérgica y doble faz (1).jpg" alt="Set de toallas antialérgica y doble faz">
                     <h2>Set de toallas antialérgica y doble faz</h2>
                     <p>$140.000</p>
-                    <button class="btn-main" onclick="agregarAlCarrito('Set de toallas antialérgica y doble faz', 140000,this)">Agregar</button>
+                    <button class="btn-main" onclick="agregarAlCarrito('Set de toallas antialérgica y doble faz', 140000,'img/toallas/Set de toallas antialérgica y doble faz (1).jpg',this)">Agregar</button>
                     <p class="mensaje" style="color: green; display: none;"></p>
                 </div>
         </div>
@@ -134,14 +104,14 @@
                 <img src="img/pijamas/Pijama personalizada (1).jpg" alt="Pijama mujer">
                 <h3>Pijama Short corto personalizada</h3>
                 <p>$130.000</p>
-                <button class="btn-main" onclick="agregarAlCarrito('Pijama Personalizada', 120000,this)">Agregar</button>
+                <button class="btn-main" onclick="agregarAlCarrito('Pijama Personalizada', 120000,'img/pijamas/Pijama personalizada (1).jpg',this)">Agregar</button>
                 <p class="mensaje" style="color: green; display: none;"></p>
             </div>
             <!-- <div class="producto">
                 <img src="..." alt="...">
                 <h3>Pijama Hombre</h3>
                 <p>$130.000</p>
-                <button class="btn-main" onclick="agregarAlCarrito('Pijama Hombre', 130000,this)">Agregar</button>
+                <button class="btn-main" onclick="agregarAlCarrito('Pijama Hombre','...', 130000,this)">Agregar</button>
                 <p class="mensaje" style="color: green; display: none;"></p>
             </div> -->
         </div>
@@ -152,14 +122,14 @@
                 <img src="img/manteles/mantel.jpg" alt="Mantel de cuadros">
                 <h3>Mantel a cuadros</h3>
                 <p>$70.000</p>
-                <button class="btn-main" onclick="agregarAlCarrito('Mantel a Cuadros', 70000,this)">Agregar</button>
+                <button class="btn-main" onclick="agregarAlCarrito('Mantel a Cuadros', 70000,'img/manteles/mantel.jpg',this)">Agregar</button>
                 <p class="mensaje" style="color: green; display: none;"></p>
             </div>
             <!-- <div class="producto">
                 <img src="..." alt="...">
                 <h3>Pijama Hombre</h3>
                 <p>$130.000</p>
-                <button class="btn-main" onclick="agregarAlCarrito('Pijama Hombre', 130000,this)">Agregar</button>
+                <button class="btn-main" onclick="agregarAlCarrito('Pijama Hombre', 130000,'...',this)">Agregar</button>
                 <p class="mensaje" style="color: green; display: none;"></p>
             </div> -->
         </div>
@@ -170,14 +140,14 @@
                 <img src="img/espuma/espuma5.jpeg" alt="Faja Post-liposuccion">
                 <h3>Faja Post-liposuccion</h3>
                 <p>$75.000</p>
-                <button class="btn-main" onclick="agregarAlCarrito('Faja Post-liposuccion', 75000,this)">Agregar</button>
+                <button class="btn-main" onclick="agregarAlCarrito('Faja Post-liposuccion', 75000,'img/espuma/espuma5.jpeg',this)">Agregar</button>
                 <p class="mensaje" style="color: green; display: none;"></p>
             </div>
             <!-- <div class="producto">
                 <img src="..." alt="...">
                 <h3>Pijama Hombre</h3>
                 <p>$130.000</p>
-                <button class="btn-main" onclick="agregarAlCarrito('Pijama Hombre', 130000,this)">Agregar</button>
+                <button class="btn-main" onclick="agregarAlCarrito('Pijama Hombre', 130000,'...',this)">Agregar</button>
                 <p class="mensaje" style="color: green; display: none;"></p>
             </div> -->
         </div>
@@ -188,14 +158,14 @@
                 <img src="img/conjuntos/Set de dos piezas juvenil para el verano (2).jpg" alt="Set de dos piezas">
                 <h3>Set de dos piezas</h3>
                 <p>$160.000</p>
-                <button class="btn-main" onclick="agregarAlCarrito('Set de dos piezas', 160000,this)">Agregar</button>
+                <button class="btn-main" onclick="agregarAlCarrito('Set de dos piezas', 160000,'img/conjuntos/Set de dos piezas juvenil para el verano (2).jpg',this)">Agregar</button>
                 <p class="mensaje" style="color: green; display: none;"></p>
             </div>
             <!-- <div class="producto">
                 <img src="..." alt="...">
                 <h3>Pijama Hombre</h3>
                 <p>$130.000</p>
-                <button class="btn-main" onclick="agregarAlCarrito('Pijama Hombre', 130000,this)">Agregar</button>
+                <button class="btn-main" onclick="agregarAlCarrito('Pijama Hombre', 130000,'...',this)">Agregar</button>
                 <p class="mensaje" style="color: green; display: none;"></p>
             </div> -->
         </div>

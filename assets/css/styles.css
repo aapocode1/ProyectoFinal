@@ -196,4 +196,144 @@ button.btn-form {
     font-size: 4.5em;
 }
 
+/* Carrito de compras---------------------------------------------------------- */
+.carrito-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carrito-item img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Botón del carrito */
+.btn-aside {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-aside:hover {
+    background-color: #c82333;
+}
+
+/* Formulario de Pago */
+.formulario-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-form {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-form:hover {
+    background-color: #218838;
+}
+/*===============================================================================*/
+/* Ajuste general para que los elementos se adapten */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Ajuste para el carrito y formulario en pantallas grandes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Ajuste para pantallas medianas y móviles */
+@media (max-width: 768px) {
+    .col-md-5 {
+        width: 100%; /* Hace que los elementos ocupen todo el ancho */
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Reduce el tamaño del título */
+    }
+
+    .hero p {
+        font-size: 1em; /* Ajusta el tamaño del texto */
+    }
+
+    .carrito-item img {
+        width: 40px; /* Reduce el tamaño de las miniaturas */
+    }
+
+    .btn-form, .btn-aside {
+        font-size: 1em; /* Ajusta el tamaño de los botones */
+    }
+}
+
+/*===================================*/
+.carrito-icono {
+    position: relative;
+    font-size: 24px;
+    color: white;
+}
+
+.carrito-contador {
+    position: absolute;
+    top: -10px;
+    right: -50px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 
