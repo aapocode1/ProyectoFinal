@@ -92,7 +92,6 @@ body, ul, li, p, a, label, input, div {
     background-size: 90%;  /*Reduce el tamaño del icono dentro del botón */
     border: none;
     outline: none; /* También elimina el contorno de enfoque */
-
 }
 
 

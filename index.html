@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
@@ -17,6 +18,8 @@
             <img src="assets/img/logo.jpg" alt="logo" width="150" height="150">
             <h1>HouseAtelier | Taller a la medida</h1>
         </div>
+
+        <!-- barra de navegacion -->
         <nav class="navbar navbar-expand-lg custombar-bg navbar-light" id="templatemo_nav_top">
             <div class="container text-light">
                 <div class="w-100 d-flex justify-content-between">
@@ -33,6 +36,8 @@
                 </div>
             </div>
         </nav>
+        <!-- fin barra de navegacion -->
+
         <!-- inicio menu -->
          <nav class="navbar navbar-expand-lg custom-bg shadow">
             <div class="container d-flex justify-content-between align-items-center">
@@ -40,14 +45,14 @@
                 <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-between" id="nav-item">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link disabled" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#">Toallas</a>
+                                        <a class="dropdown-item" href="assets/productos.html">Toallas</a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item" href="#">Pijamas</a>
@@ -65,10 +70,11 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="assets/shop-single.html">Compras</a>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a class="nav-link" href="assets/shop.html">Carrito de compras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Acerca de</a>
+                            <a class="nav-link" href="assets/about.html">Acerca de</a>
                         </li>
                     </ul>
                 </div>
@@ -76,6 +82,7 @@
          </nav>
         <!-- fin menu -->
     </header>
+    
     <!-- inicio secciones -->
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -131,40 +138,41 @@
     </div>
     
     <br><br><br><br><br>
+    <!-- <div class="container-main">
+        <main>
+            <section id="productos">
+                <div class="producto">
+                    <img src="toalla1.jpg" alt="Toalla artesanal 1">
+                    <h2>Toalla Elegante</h2>
+                    <p>$25.00</p>
+                    <button class="btn-main" onclick="agregarAlCarrito('Toalla Elegante', 25)">Agregar</button>
+                </div>
+                <div class="producto">
+                    <img src="toalla2.jpg" alt="Toalla artesanal 2">
+                    <h2>Toalla Premium</h2>
+                    <p>$30.00</p>
+                    <button class="btn-main" onclick="agregarAlCarrito('Toalla Premium', 30)">Agregar</button>
+                </div>
+            </section>
+        </main>
+        
+        <aside>
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito"></ul>
+            <button class="btn-aside" onclick="vaciarCarrito()">Vaciar Carrito</button>
 
-    <main>
-        <section id="productos">
-            <div class="producto">
-                <img src="toalla1.jpg" alt="Toalla artesanal 1">
-                <h2>Toalla Elegante</h2>
-                <p>$25.00</p>
-                <button onclick="agregarAlCarrito('Toalla Elegante', 25)">Agregar</button>
-            </div>
-            <div class="producto">
-                <img src="toalla2.jpg" alt="Toalla artesanal 2">
-                <h2>Toalla Premium</h2>
-                <p>$30.00</p>
-                <button onclick="agregarAlCarrito('Toalla Premium', 30)">Agregar</button>
-            </div>
-        </section>
-    </main>
-    
-    <aside>
-        <h2>Carrito de Compras</h2>
-        <ul id="carrito"></ul>
-        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <h2>Formulario de Pago</h2>
+            <form id="formPago">
+                <label>Nombre:</label>
+                <input type="text" required><br>
+                <label>Tarjeta de crédito:</label>
+                <input type="text" required><br>
+                <button class="btn-form" type="submit">Pagar</button>
+            </form>
+        </aside>
+    </div> -->
 
-        <h2>Formulario de Pago</h2>
-        <form id="formPago">
-            <label>Nombre:</label>
-            <input type="text" required><br>
-            <label>Tarjeta de crédito:</label>
-            <input type="text" required><br>
-            <button type="submit">Pagar</button>
-        </form>
-    </aside>
-
-    <footer class="custom-bg" id="templatemo_footer">
+    <footer class="custombar-bg" id="templatemo_footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 pt-5">
@@ -198,7 +206,8 @@
                     <h2 class="h2 text-dark border-bottom pb-3 border-light">Mas informacion</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a  class="text-decoration-none" href="#">Inicio</a></li>
-                        <li><a  class="text-decoration-none" href="assets/shop.html">Productos</a></li>
+                        <li><a  class="text-decoration-none" href="assets/productos.html">Productos</a></li>
+                        <li><a  class="text-decoration-none" href="assets/shop.html">Carrito de compras</a></li>
                         <li><a  class="text-decoration-none" href="assets/about.html">Acerca de</a></li>
                     </ul>
                 </div>
@@ -215,6 +224,6 @@
 
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

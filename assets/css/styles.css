@@ -6,11 +6,10 @@ body {
     text-align: center;
 }
 
-header {
-    background-color: #ff6b6b;
-    color: white;
-    padding: 20px;
+.container-main{
+    background-color:rgb(255, 150, 170);
 }
+
 
 nav ul {
     list-style: none;
@@ -47,7 +46,7 @@ nav ul li a {
     height: auto;
 }
 
-button {
+.btn-main,.btn-aside,.btn-form {
     background-color: #ff6b6b;
     color: white;
     border: none;
@@ -55,7 +54,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn-main:hover,.btn-aside:hover,.btn-form:hover {
     background-color: #ff5252;
 }
 
@@ -66,5 +65,73 @@ footer {
     padding: 10px;
     position: relative;
     bottom: 0;
+    width: 100%;
+}
+
+/*formulario Estilos modernos */
+aside {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+ul#carrito {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+button.btn-aside, button.btn-form {
+    background: linear-gradient(to right, #ff6b6b, #fc9191);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button.btn-aside:hover, button.btn-form:hover {
+    background: linear-gradient(to right, #ff5252, #f88787);
+}
+
+form#formPago {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid #6a11cb;
+    outline: none;
+}
+
+button.btn-form {
     width: 100%;
 }
