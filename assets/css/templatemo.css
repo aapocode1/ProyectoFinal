@@ -80,7 +80,7 @@ body, ul, li, p, a, label, input, div {
 /* agregado esta clase para el carrusel*/
 .carousel-item img {
     width: 100vw; /* Ajusta el ancho según sea necesario */
-    height: 600px; /* Ajusta la altura según sea necesario */
+    height: 100vh; /* Ajusta la altura según sea necesario */
     object-fit:contain; /* Mantiene la proporción de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente */
 }
@@ -93,6 +93,43 @@ body, ul, li, p, a, label, input, div {
     border: none;
     outline: none; /* También elimina el contorno de enfoque */
 }
+
+#carouselExampleCaptions {
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 150, 170); /* Color de fondo */
+    padding: 20px 0; /* Espaciado para evitar que las imágenes se peguen al borde */
+}
+
+/* Asegurar que las imágenes se mantengan visibles */
+.carousel-inner {
+    position: relative;
+    z-index: 1; /* Asegura que las imágenes estén por encima del fondo */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Ajusta el ancho del texto */
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%; /* Limita el ancho del texto */
+    word-wrap: break-word; /* Evita que el texto se desborde */
+    color: #ffffff;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0); /* Desplazamiento, desenfoque y color */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 0.9em; /* Reduce el tamaño del texto en móviles */
+        width: 95%;
+    }
+}
+
 
 
 
