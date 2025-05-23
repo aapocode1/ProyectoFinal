@@ -10,6 +10,24 @@ body {
     background-color:rgb(255, 150, 170);
 }
 
+/* Estilos generales para el contenido */
+.seccion {
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    text-align: left; /* Justifica el texto a la izquierda */
+    padding: 20px; /* Espaciado interno para mejor presentación */
+    box-sizing: border-box; /* Evita desbordamientos */
+}
+
+.seccion h2{
+    background-color: rgb(255, 150, 170);
+}
+
+/* Último párrafo con tamaño de letra mayor */
+#ultimo {
+    font-size: 1.5em !important; /* Aumenta el tamaño de la última línea */
+    font-weight: bold; /* Opcional: hacer que el texto resalte más */
+}
+
 
 nav ul {
     list-style: none;
